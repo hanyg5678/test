@@ -1,0 +1,248 @@
+@CHARSET "UTF-8";
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡEric Meyer's CSS Resetㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+	details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+	output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 20px;
+/* 	vertical-align: baseline; */
+}
+/* HTML5 display-role reset for older browsers */
+h1 {
+	text-shadow: 1px 1px 1px #000000;
+	box-shadow: 10px 10px 5px grey;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡEric Meyer's CSS Resetㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+a:link { /* A 태그의 링크 속성 */
+	text-decoration: none; /* 문자열 꾸미기값을 지정하지 않음, 밑줄 삭제 */
+	color: black; /* 글자색깔 검정 */
+}
+
+a:hover { /* A 태그에 마우스가 올라 갔을 경우 */
+	text-decoration: none; /* 문자열 꾸미기값을 지정하지 않음, 밑줄 삭제 */
+	background-color: #fff000; /* 배경 색 변경*/
+	color: black; /* 문자열 색깔 */
+}
+
+a:visited { /* A 태그의 링크를 방문한 경우 */
+	text-decoration: none; /* 문자열 꾸미기값을 지정하지 않음, 밑줄 삭제 */
+	color: black; /* 글자색깔 검정 */
+}
+
+.title {
+	font-size: 28px;
+	text-align: center;
+	border-style: solid; /* 실선 */
+	border-width: 1px; /* 선 두께 */
+	border-color: #533d3f; /* 선 색깔 */
+	background-color: #fff000; /* 배경 색 깔 */
+	color: #533d3f; /* 글자 색깔 */
+	width: 30%; /* 화면의 30% */
+	padding: 10px; /* 위 오른쪽 아래 왼쪽: 시간 방향 적용 */
+	/* padding: 50px 10px;  50px: 위 아래, 10px: 좌우 */
+	/* padding-top: 30px;  상단만 간격을 30px 지정   */
+	margin: 50px auto; /* 가운데 정렬 기능, 20px: 위 아래, auto: 오른쪽 왼쪽*/
+	text-shadow: 1px 1px 1px #000000;
+	box-shadow: 10px 10px 5px grey;
+}
+
+/* 내용 */
+.content {
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+	padding: 10px; /* 위 오른쪽 아래 왼쪽 */
+	margin: 0 auto; /* 가운데 정렬 */
+}
+
+/* 하단 메뉴 */
+.bottom {
+	margin: 20px auto;
+	text-align: center;
+	width: 100%;
+	padding: 10px; /* 위 오른쪽 아래 왼쪽 */
+}
+
+.button {
+	background-color: white;
+	border: 2px solid #533d3f;
+	color: black;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.button_mini {
+	background-color: white;
+	border: 2px solid #533d3f;
+	color: black;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #533d3f;
+	color: white;
+}
+
+.button_mini:hover {
+	background-color: #533d3f;
+	color: white;
+}
+
+/* 테이블에 CSS 적용 */
+table {
+	margin: 0 auto; /* 테이블 가운데 정렬 */
+	border-color: #533d3f; /* 테이블 외곽선 색깔 */
+	border-width: 1px; /* 테이블 외곽선 두께 */
+	border-style: solid; /* 테이블 외곽선 스타일 */
+	border-collapse: collapse; /* 컬럼의 외곽선을 하나로 결합 */
+	box-shadow: 10px 10px 5px grey;
+	width: 60%;
+}
+
+th {
+	border-color: #533d3f; /* 테이블 외곽선 색깔 */
+	border-width: 1px; /* 테이블 외곽선 두께 */
+	border-style: solid; /* 테이블 외곽선 스타일 */
+	color: #533d3f; /* 글자 색 */
+	background-color: #fff000; /* 배경 색 */
+	padding: 5px; /* 셀 내부 간격 */
+	text-shadow: 1px 1px 1px #000000;
+}
+
+td {
+	border-color: #533d3f; /* 테이블 외곽선 색깔 */
+	border-width: 1px; /* 테이블 외곽선 두께 */
+	border-style: solid; /* 테이블 외곽선 스타일 */
+	color: #000000; /* 글자 색 */
+	background-color: #FFFFFF; /* 배경 색 */
+	padding: 5px; /* 셀 내부 간격 */
+}
+
+.input {
+	padding: 0px;
+	border-color: #AAAAAA; /* 테이블 외곽선 색깔 */
+	border-width: 1px; /* 테이블 외곽선 두께 */
+	border-style: solid; /* 테이블 외곽선 스타일 */
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+}
+
+.textarea {
+	padding: 0px;
+	border-color: #AAAAAA; /* 테이블 외곽선 색깔 */
+	border-width: 1px; /* 테이블 외곽선 두께 */
+	border-style: solid; /* 테이블 외곽선 스타일 */
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+}
+
+
+ul {
+	list-style-type: none;
+/* 	width: 1440px; */
+	margin: 0 auto;
+/* 	padding-left: 80px; */
+/* 	position: relative; */
+}
+
+li {
+	display: inline-block;
+	float: left;
+	margin-right: 1px;
+}
+
+li a {
+	display: block;
+	min-width: 140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	background: #2f3036;
+	text-decoration: none;
+}
+
+li:hover a {
+	background: #fff000;
+}
+
+li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*검색폼*/
+.search {
+	width: 80%;
+	text-align: center;
+	margin: 1px auto;
+}
+
+li:hover ul a:hover {
+	background: #fff000;
+	color: #fff;
+}
+
+.img10 {
+	width: 10%;
+}
+
+.img30 {
+	width: 30%;
+}
+td img{
+	text-align: center;
+}
